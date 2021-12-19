@@ -1,4 +1,4 @@
-package co.com.sofka.app.calculator;
+package co.com.sofka.app;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
