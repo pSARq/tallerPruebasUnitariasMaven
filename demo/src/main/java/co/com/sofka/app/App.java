@@ -1,12 +1,12 @@
 package co.com.sofka.app;
 
+import co.com.sofka.app.calculator.BasicCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.SocketTimeoutException;
 
 public class App {
 
@@ -27,9 +27,9 @@ public class App {
 
         BasicCalculator calculator = new BasicCalculator();
         Long sum = calculator.sum(number1, number2);
-        Long subtraction = calculator.sum(number1, number2);
-        Long multiplication = calculator.sum(number1, number2);
-        Long division = calculator.sum(number1, number2);
+        Long subtraction = calculator.subtraction(number1, number2);
+        Long multiplication = calculator.multiplication(number1, number2);
+        Long division = calculator.division(number1, number2);
 
         System.out.println(number1 +" + "+ number2 +" = "+ sum);
         System.out.println(number1 +" - "+ number2 +" = "+ subtraction);
