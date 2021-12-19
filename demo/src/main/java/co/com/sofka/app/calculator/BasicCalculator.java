@@ -13,17 +13,17 @@ public class BasicCalculator {
     }
 
     public Long subtraction(Long number1, Long number2){
-        logger.info("subtracting {} + {}", number1, number2);
+        logger.info("subtracting {} - {}", number1, number2);
         return number1 - number2;
     }
 
     public Long multiplication(Long number1, Long number2){
-        logger.info("multiplying {} + {}", number1, number2);
+        logger.info("multiplying {} * {}", number1, number2);
         return number1 * number2;
     }
 
     public Long division(Long number1, Long number2){
-        logger.info("dividing {} + {}", number1, number2);
+        logger.info("dividing {} / {}", number1, number2);
         try {
             return number1 / number2;
         } catch (ArithmeticException e){
